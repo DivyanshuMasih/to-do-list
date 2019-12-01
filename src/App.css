@@ -1,8 +1,8 @@
 .App {
   text-align: left;
   color: yellow;
+   font-size: x-large;
+  
+  
 };
-.Button
-{
- background-image: cross-fade(); 
-}
+

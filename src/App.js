@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './button.css';
 import 'C:/Users/Divyanshu/node_modules/bootstrap/dist/css/bootstrap.css'
 
 
@@ -9,7 +10,7 @@ function App() {
     <div >
       <span className="App " >Todo
         </span>
-        <button className="btn btn-secondary btn-sm m-34">+</button>
+        <button className="button btn btn-secondary btn-sm ">+</button>
         <style>{'body { background-color: #5C615E; }'}</style>
       </div>
   );
