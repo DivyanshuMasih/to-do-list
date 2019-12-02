@@ -2,5 +2,12 @@
 {
     position: absolute;
     left: 1300px;
+    
   
+}
+.input 
+{
+    position: absolute;
+    left: 800px;
+     length: 200px;
 }
