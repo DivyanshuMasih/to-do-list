@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import './button.css';
 import 'C:/Users/Divyanshu/node_modules/bootstrap/dist/css/bootstrap.css'
-import './plus'
-import lists from "./lists"
+//import './plus'
+import Lists from "./Lists"
 class App extends Component{
   constructor(props)
   {
@@ -46,7 +46,7 @@ render() {
           <input ref = {(a) => this._inputElement =a} className="input"></input>
           </form>
           </div>
-          <lists entries = {this.state.items}/>
+          <Lists entries = {this.state.items}/>
         <style>{'body { background-color: #5C615E; }'}</style>
       </div>
       
