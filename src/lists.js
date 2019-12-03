@@ -11,7 +11,7 @@ class Lists extends Component
         var listItems = todoEntries.map(this.createTasks);
         return (
           
-        <ul type="circle" className="theList">
+        <ul type="circle" className="clr theList">
             {listItems}
             </ul>
            

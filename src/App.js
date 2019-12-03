@@ -14,9 +14,12 @@ class App extends Component{
     
     this.state =
     {
-      items:[]
+      items:[],
+      show:false
     };
     this.addItem = this.addItem.bind(this);
+    this.Togle =this.Togle.bind(this);
+ //this.Toglee =this.Toglee.bind(this);
   }
   addItem(e)
   {
@@ -32,9 +35,18 @@ class App extends Component{
         };
       });
     }
+    
     this._inputElement.value = "";
     console.log(this.state.items);
     e.preventDefault();
+  }
+  Togle = () => {
+    const { show } = this.state;
+    this.setState ( {show:!show} )
+  }
+  Toglee = () => {
+    const { show } = this.state;
+    this.setState ( {show:!show} )
   }
 render() {
   return (<div>
@@ -42,21 +54,19 @@ render() {
       <span className="App " >Todo
         </span>
         <div>
-          <form onSubmit={this.addItem}>
-        <button type="submit" className="button btn btn-secondary btn-sm ">+</button>
-  
-          </form>
+         <button onClick = {this.Togle}/>
+         
           </div>
-          <Lists entries = {this.state.items}>
+          <Lists className ="clr" entries = {this.state.items}>
          
          
           </Lists>
-          <form entries = {this.state.items} onSubmit={this.addItem}>
+          { this.state.show && <form entries = {this.state.items} onSubmit={this.addItem} >
+          
+          <input className="button" ref = {(a) => this._inputElement =a} className="input"></input>
         
-        
-        <input className="button" ref = {(a) => this._inputElement =a} className="input"></input>
-          </form>
-        <style>{'body { background-color: #5C615E; }'}</style>
+          </form> }
+        <style>{'body { background-color: black; }'}</style>
       </div></div>
       
   );
@@ -65,4 +75,5 @@ render() {
 
   
 }
+
 export default App;
