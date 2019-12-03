@@ -19,7 +19,7 @@ class App extends Component{
     };
     this.addItem = this.addItem.bind(this);
     this.Togle =this.Togle.bind(this);
- //this.Toglee =this.Toglee.bind(this);
+ this.Toglee =this.Toglee.bind(this);
   }
   addItem(e)
   {
@@ -42,11 +42,11 @@ class App extends Component{
   }
   Togle = () => {
     const { show } = this.state;
-    this.setState ( {show:!show} )
+    this.setState ( {show:true} )
   }
   Toglee = () => {
     const { show } = this.state;
-    this.setState ( {show:!show} )
+    this.setState ( {show:false} )
   }
 render() {
   return (<div>
@@ -61,11 +61,12 @@ render() {
          
          
           </Lists>
-          { this.state.show && <form entries = {this.state.items} onSubmit={this.addItem} >
+          { this.state.show && <form entries = {this.state.items} onSubmit={this.addItem} onPointerLeave={this.Toglee}>
           
-          <input className="button" ref = {(a) => this._inputElement =a} className="input"></input>
-        
-          </form> }
+          <input className="button" ref = {(a) => this._inputElement =a} className="input"   ></input>
+   
+          </form> }   
+          
         <style>{'body { background-color: black; }'}</style>
       </div></div>
       
