@@ -5,7 +5,7 @@ class Lists extends Component
     {
     return <div>
         
-        <li key={item.key}>{item.text}</li>
+        <li className= "ree" key={item.key}>{item.text}</li>
         <ColoredLine color="white" />
     </div>
     }

@@ -40,6 +40,7 @@
     
     .ull li:before {
         content: "O";
+        color: black;
         font-size: 100%; /* or whatever */
         padding-right: 15px;
         
@@ -53,7 +54,7 @@
         left: 5%;
         width: 80%;
         height: 56px;
-        border-radius: 4px;
+        border-radius: 10px;
         
         background-color: rgba(255,255,255,0.3);
         transition: 0.3s all;
@@ -61,4 +62,8 @@
       .field:hover {
         background-color: rgba(255, 255, 255, 0.45);
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+      }
+      .ree
+      {
+font-size: 10px;
       }
