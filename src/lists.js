@@ -3,7 +3,11 @@ class Lists extends Component
 {
     createTasks(item)
     {
-    return <li key={item.key}>{item.text}</li>
+    return <div>
+        
+        <li key={item.key}>{item.text}</li>
+        <ColoredLine color="white" />
+    </div>
     }
     render()
     {
@@ -11,9 +15,11 @@ class Lists extends Component
         var listItems = todoEntries.map(this.createTasks);
         return (
             
-      <ul  className="clr theList ull ">
-            {listItems}
+      <ul className="clr theList ull ">
+            {listItems }
+            
             </ul>
+           
            
         );
         
@@ -21,4 +27,14 @@ class Lists extends Component
 
 }
 
+const ColoredLine = ({ color,h }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: .1
+            
+        }}
+    />
+  );
 export default Lists;

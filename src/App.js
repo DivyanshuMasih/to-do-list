@@ -55,21 +55,22 @@ render() {
       <span className="App " >Todo
         </span>
         <span><button className ="button" onClick = {this.Togle}>+</button></span>
-        <div>
-        
+        <ColoredLine color="white" />
+          <Lists  className ="clr" entries = {this.state.items}>
          
-          </div>
-          <Lists className ="clr" entries = {this.state.items}>
-         
-         
+          
           </Lists>
-          { this.state.show && <form entries = {this.state.items}  onSubmit={this.addItem} onPointerLeave={this.Toglee}>
           
-          <input ref = {(a) => this._inputElement =a}  className="input"  ></input>
+          
+          { this.state.show && <form   onSubmit={this.addItem} onPointerLeave={this.Toglee}>
+         
+          <input  ref = {(a) => this._inputElement =a }  className="field"  ></input>
+          
    
-          </form> }   
+          </form> }  
+          <style>{'body { background-color: #A9ADAB; }'}</style>
           
-        <style>{'body { background-color: black; }'}</style>
+        
       </div></div>
       
   );
@@ -78,5 +79,13 @@ render() {
 
   
 }
-
+const ColoredLine = ({ color,h }) => (
+  <hr
+      style={{
+          color: color,
+          backgroundColor: color,
+          height: .1
+      }}
+  />
+);
 export default App;
