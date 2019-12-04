@@ -50,20 +50,22 @@ class App extends Component{
   }
 render() {
   return (<div>
+    
     <div >
       <span className="App " >Todo
         </span>
+        <span><button className ="button" onClick = {this.Togle}>+</button></span>
         <div>
-         <button onClick = {this.Togle}/>
+        
          
           </div>
           <Lists className ="clr" entries = {this.state.items}>
          
          
           </Lists>
-          { this.state.show && <form entries = {this.state.items} onSubmit={this.addItem} onPointerLeave={this.Toglee}>
+          { this.state.show && <form entries = {this.state.items}  onSubmit={this.addItem} onPointerLeave={this.Toglee}>
           
-          <input className="button" ref = {(a) => this._inputElement =a} className="input"   ></input>
+          <input ref = {(a) => this._inputElement =a}  className="input"  ></input>
    
           </form> }   
           

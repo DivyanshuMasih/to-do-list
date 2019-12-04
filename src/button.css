@@ -1,17 +1,43 @@
 .button
 {
     position: absolute;
-    left: 1300px;
+    left:50%;
+    box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:21px;
+	font-weight:bold;
+	padding:0px 12px;
+	text-decoration:none;
+	text-shadow:0px 0px 50px #2b665e;
     
   
 }
 .input 
 {
     position: absolute;
-         
+    left:20px;
 }
-
 .clr
 {
     color:white;
 }
+
+.ull{
+    margin-left: 10px;
+    list-style-type:none;
+    
+    
+    }
+    
+    .ull li:before {
+        content: "O";
+        font-size: 100%; /* or whatever */
+        padding-right: 15px;
+     }

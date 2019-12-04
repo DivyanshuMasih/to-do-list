@@ -10,13 +10,15 @@ class Lists extends Component
         var todoEntries = this.props.entries;
         var listItems = todoEntries.map(this.createTasks);
         return (
-          
-        <ul type="circle" className="clr theList">
+            
+      <ul  className="clr theList ull ">
             {listItems}
             </ul>
            
         );
+        
     }
 
 }
+
 export default Lists;
