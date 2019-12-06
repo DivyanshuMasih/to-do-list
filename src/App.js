@@ -4,7 +4,7 @@ import './App.css';
 import './button.css';
 //import {Button} from 'react-bootstrap'
 
-import 'C:/Users/Divyanshu/node_modules/bootstrap/dist/css/bootstrap.css'
+//import 'C:/Users/Divyanshu/node_modules/bootstrap/dist/css/bootstrap.css'
 //import './plus'
 import Lists from "./Lists"
 class App extends Component{
